@@ -1,0 +1,147 @@
+/*******************************************************
+TITLE: Fluid Three-Column Layout (Basic) V1.0 (Beta)
+DATE: 20060418
+AUTHOR: The CSS Tinderbox - http://www.csstinderbox.com
+*******************************************************/
+
+body {
+margin:0;
+padding:0;
+background-color:#ffffff;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1em;
+}
+
+a{text-decoration:none; color:#f5f6fa;}
+
+blockquote {
+margin:1em;
+padding:.5em;
+font-size:.9em;
+background-color:#353b48;
+border-top:1px solid #999999;
+border-bottom:1px solid #999999;
+}
+
+blockquote p {
+margin:.2em;
+}
+
+#header {
+margin:2em 2em 0 2em;
+padding:1em 1.5em;
+height:5em;
+background-color:#353b48;
+border:1px solid #eeeeee;
+}
+
+#header h1 { 
+margin:0; 
+padding:0;
+font-size:1.2em;
+}
+
+#header h3 { 
+margin:0; 
+padding:0;
+font-size:.9em;
+}
+
+#leftColumn {
+position:absolute;
+left:2.25em;
+top:10.3em;
+width:14em;
+margin:0;
+padding:1em .5em 2em .5em;
+background:#e84118;
+border:1px solid #eeeeee;
+font-size:.9em;
+}
+
+#leftColumn h2 { 
+margin:0 0 -1em 0; 
+padding:0;
+font-size:1em;
+letter-spacing:.1em;
+}
+
+#leftColumn ul { 
+margin:1.5em 0 0 0; 
+padding:0;
+list-style:none;
+}
+
+#leftColumn li { 
+margin:0 0 .4em 0; 
+padding:0;
+}
+
+#leftColumn li a { 
+margin:0 0 0 .2em;
+text-decoration:none; 
+}
+
+#centerColumn {
+margin-top:.2em;
+margin-left: 16em;
+margin-right:16em;
+voice-family: "\"}\"";
+voice-family: inherit;
+margin-left:17.50em;
+margin-right:17.50em;
+padding:1em .5em 2em .5em;
+background:#FFFFFF;
+font-size:.9em;
+}
+
+html>body #centerColumn {
+margin-left:17.50em;
+margin-right:17.50em;
+}
+
+#centerColumn h2 { 
+margin:0 0 -1em 0; 
+padding:0;
+font-size:1em;
+letter-spacing:.1em;
+}
+
+#rightColumn {
+position:absolute;
+right:2.25em;
+top:10.3em;
+width:14em;
+margin:0;
+padding:1em .5em 2em .5em;
+background:#00a8ff;
+border:1px solid #eeeeee;
+font-size:.9em;
+}
+
+#rightColumn h2 { 
+margin:0 0 -1em 0; 
+padding:0;
+font-size:1em;
+letter-spacing:.1em;
+}
+
+#tags {
+margin:0 0 .5em 0;
+width:10em;
+float:right;
+border:none;
+text-align:right;
+}
+
+#tags img {
+border:none;
+}
+
+#tags p {
+margin:0 0 .25em 0;
+}
+
+#tags a {
+font-size:.7em;
+}

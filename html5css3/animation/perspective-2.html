@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-size: 16px;
+    }
+
+    .wrapper {
+      perspective: 1000px;
+      margin: 4em auto;
+      width: 37em;
+    }
+
+    .wrapper:hover .inner {
+      transform: rotate(0)
+    }
+
+    .inner {
+      transition: .3s;
+      transform: rotateY(40deg);
+    }
+
+    .inner figure {
+      box-shadow: -6px 6px 2px -3px rgba(100, 100, 100, .1);
+      width: 11em;
+      padding: 1em;
+      display: inline-block;
+      margin-right: 1em;
+      background: rgba(250, 200, 200, 0.1);
+      border: 1px solid rgba(250, 200, 200, .5);
+    }
+
+    .inner figcaption {
+      text-align: center;
+      margin: .5em 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: bold;
+      color: darken(235, 77, 75, 15%);
+    }
+
+    .inner img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+      margin: 0 auto;
+      -webkit-filter: sepia(75%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="inner">
+      <figure>
+        <img src="../images/c1.jpg" alt="Nature">
+        <figcaption>Luxury cars</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/c2.jpg" alt="Nature">
+        <figcaption>Luxury cars</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/c1.jpg" alt="Nature">
+        <figcaption>Luxury cars</figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+
+</html>

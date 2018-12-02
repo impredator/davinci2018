@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <style>
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 5px 20px;
+    }
+
+    .wrap {
+      position: relative;
+      height: 200px;
+      width: 200px;
+      margin: 10px auto;
+      background: transparent;
+      perspective: 600px;
+    }
+
+    .parent {
+      margin: 10px;
+      width: 150px;
+      height: 150px;
+      background-color: aquamarine;
+      transform-style: preserve-3d;
+      transform: rotateY(245deg);
+    }
+
+    .parent-flat {
+      transform-style: flat;
+    }
+
+    .parent>div {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 150px;
+      height: 150px;
+      box-sizing: border-box;
+    }
+
+    .one {
+      background-color: goldenrod;
+      transform: translateZ(-100px) rotateY(45deg);
+    }
+
+    .two {
+      background-color: green;
+      transform: translateZ(50px) rotateX(20deg);
+      transform-origin: 50% top;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="parent">
+      <div class="one"></div>
+      <div class="two"></div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="parent parent-flat">
+      <div class="one"></div>
+      <div class="two"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>

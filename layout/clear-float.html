@@ -1,0 +1,66 @@
+<html>
+
+<head>
+  <style>
+    body {
+      padding: 20px;
+      font: 1em Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    p {
+      margin: 0 0 1em 0;
+    }
+
+    .container,
+    .container2,
+    .container3 {
+      width: 500px;
+      border: 5px solid rgb(111, 41, 97);
+      border-radius: .5em;
+      padding: 10px;
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      float: left;
+      margin: 0 20px 20px 0;
+      background-color: rgba(111, 41, 97, .3);
+    }
+
+    .container::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .clear-left {
+      clear: left;
+    }
+
+    .container3 {
+      /* overflow: scroll; */
+      display: flow-root;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container2">
+    <div class="item"></div>
+    <p class="clear-left">Pea horseradish azuki bean lettuce avocado asparagus okra.</p>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="item"></div>
+    <p>Pea horseradish azuki bean lettuce avocado asparagus okra.</p>
+    <!-- <div class="clear-left"></div> -->
+  </div>
+  <hr>
+  <div class="container3">
+    <div class="item"></div>
+    <p>Pea horseradish azuki bean lettuce avocado asparagus okra.</p>
+  </div>
+</body>
+
+</html>

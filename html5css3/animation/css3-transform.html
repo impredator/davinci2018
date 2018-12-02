@@ -1,0 +1,244 @@
+<html>
+
+<head>
+  <style>
+    body,
+    html {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      padding: 0;
+      font-family: Helvetica, sans-serif;
+    }
+
+    .element {
+      background-color: #0074d9;
+      height: 20px;
+      width: 20px;
+      transform: scale(20);
+      font-size: 1px;
+      padding: 1px;
+      color: white;
+      line-height: 2px;
+    }
+
+
+    .element2 {
+      display: inline-block;
+      background-color: #0074d9;
+      height: 100px;
+      width: 100px;
+      font-size: 1px;
+      padding: 1px;
+      color: white;
+      margin-right: 5px;
+      margin-left: 5px;
+      animation: skew 3s infinite;
+      transform: skew(20deg);
+      animation-direction: alternate;
+      opacity: .7;
+    }
+
+    @keyframes skew {
+      0% {
+        transform: skewX(20deg);
+      }
+
+      100% {
+        transform: skewX(-20deg);
+      }
+    }
+
+
+    .element3 {
+      display: inline-block;
+      background-color: #aaaaaa;
+      height: 100px;
+      width: 100px;
+      transform: skew(20deg);
+      font-size: 1px;
+      padding: 1px;
+      color: white;
+      margin-right: 5px;
+      margin-left: 5px;
+      animation: shake 2s infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes shake {
+      0% {
+        transform: skewY(20deg);
+      }
+
+      100% {
+        transform: skewY(-20deg);
+      }
+    }
+
+    .element4 {
+      display: inline-block;
+      background-color: #0074d9;
+      height: 100px;
+      width: 100px;
+      font-size: 1px;
+      padding: 1px;
+      color: white;
+      margin-right: 5px;
+      margin-left: 5px;
+      animation: roll 3s infinite;
+      transform: rotate(30deg);
+      opacity: .7;
+    }
+
+    @keyframes roll {
+      0% {
+        transform: rotate(0);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+
+    .element5 {
+      display: inline-block;
+      background-color: #0074d9;
+      height: 100px;
+      width: 100px;
+      color: white;
+      text-align: center;
+      opacity: .7;
+      font-family: Verdana, sans-serif;
+      border: 3px solid rgba(0, 0, 0, .3);
+      margin-bottom: 30px;
+    }
+
+    .one {
+      transform: rotateX(40deg);
+      animation: one 2s infinite;
+      animation-direction: alternate;
+    }
+
+    .two {
+      transform: rotateY(40deg);
+      animation: two 2s infinite;
+      animation-direction: alternate;
+      background-color: #831a4a;
+    }
+
+    .three {
+      transform: rotateZ(100deg);
+      animation: three 2s infinite;
+      animation-direction: alternate;
+      background-color: #439772;
+    }
+
+    @keyframes one {
+      0% {
+        transform: rotateX(0);
+      }
+
+      100% {
+        transform: rotateX(50deg);
+      }
+    }
+
+    @keyframes two {
+      0% {
+        transform: rotateY(0);
+      }
+
+      100% {
+        transform: rotateY(70deg);
+      }
+    }
+
+    @keyframes three {
+      0% {
+        transform: rotateZ(0);
+      }
+
+      100% {
+        transform: rotateZ(100deg);
+      }
+    }
+
+
+    .square {
+      height: 100px;
+      width: 100px;
+      background-color: #3d9970;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+      color: white;
+      padding: 5px;
+      animation: shimmy 3s infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes shimmy {
+      0% {
+        transform: translate(0, 0);
+      }
+
+      100% {
+        transform: translate(20px, 50px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="element">
+    This element is 20*20px, then scale to 20, it is now 400*400px
+  </div>
+
+  <div class="element2">
+  </div>
+  <div class="element2">
+  </div>
+  <div class="element2">
+  </div>
+
+  <div class="element3">
+  </div>
+  <div class="element3">
+  </div>
+  <div class="element3">
+  </div>
+
+
+  <div class="element4">
+  </div>
+  <div class="element4">
+  </div>
+  <div class="element4">
+  </div>
+
+  <div class="element5 one">
+    rotateX
+  </div>
+  <div class="element5 two">
+    rotateY
+  </div>
+  <div class="element5 three">
+    rotateZ
+  </div>
+
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus porro officia, quae, explicabo deleniti quasi molestias dolorum non ad pariatur. Illo, inventore at. Odio iure adipisci quisquam, molestias impedit quo.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus unde, quis. Natus quasi, eveniet corporis facere laboriosam voluptatem ad blanditiis, temporibus, laborum voluptate possimus beatae illo. Illo molestiae, iure blanditiis.</p>
+  <div class="square"></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum sit aperiam odit libero soluta delectus voluptatibus saepe laboriosam maiores, quas, fuga vitae. Suscipit eum assumenda hic sunt, debitis voluptatum odit.</p>
+</body>
+
+</html>

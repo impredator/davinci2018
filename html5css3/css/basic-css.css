@@ -1,0 +1,100 @@
+* {
+  marging: 0;
+  padding: 0;
+}
+
+body {
+  font: 14px/1.5 courier, monospace;
+  background: white;
+  color: black;
+  margin: 20px;
+}
+
+.head {
+  font-size: 50px;
+  height: 80px;
+  line-height: 80px;
+  border: 1px solid black;
+}
+
+p:target {
+  border: 1px solid #d4d4d4;
+  background-color: #e5eecc;
+}
+
+p:nth-of-type(2) {
+  background-color: #0000ee;
+}
+
+#top,
+#middle {
+  margin: 15px;
+  background-color: red;
+}
+
+#top.top {
+  background-color: black;
+}
+
+section#top.top {
+  background-color: green;
+}
+
+section#top.vip {
+  background-color: yellow;
+}
+
+#top .title {
+  color: white;
+}
+
+#top .content {
+  color: #ccc;
+}
+
+p#top.top {
+  background-color: #ef00ee;
+}
+
+#flag {
+  display: block;
+  width: 596px;
+  height: 130px;
+  background-image: url(../images/flag.png);
+  transition: background-position 0.5s;
+}
+
+a#flag:hover {
+  background-position: center;
+}
+
+a#flag:active {
+  background-position: bottom;
+}
+
+#btn {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: #3498db;
+  transition: 0.5s;
+}
+
+#btn:hover {
+  background-color: #2980b9;
+}
+
+#dragon {
+  display: block;
+  width: 89px;
+  height: 110px;
+  background-image: url(../images/dragon.png);
+}
+
+a#dragon:hover {
+  background-position-x: 181px;
+}
+
+a#dragon:active {
+  background-position-x: 89px;
+}

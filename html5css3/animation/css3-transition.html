@@ -1,0 +1,94 @@
+<html>
+
+<head>
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+      background: red;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      -webkit-transition: background-color 2s ease-out;
+      -moz-transition: background-color 2s ease-out;
+      -o-transition: background-color 2s ease-out;
+      transition: background-color 2s ease-out;
+    }
+
+    .box:hover {
+      background-color: green;
+      cursor: pointer;
+    }
+
+    .box2 {
+      width: 150px;
+      height: 150px;
+      background: red;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .box2:hover {
+      background-color: green;
+      cursor: pointer;
+      -webkit-transition: background-color 2s ease-out;
+      -moz-transition: background-color 2s ease-out;
+      -o-transition: background-color 2s ease-out;
+      transition: background-color 2s ease-out;
+    }
+
+    .container {
+      margin-top: 100px;
+    }
+
+    .square {
+      height: 50px;
+      width: 50px;
+      margin: 20px;
+    }
+
+    .square1 {
+      background-color: #FE5DA6;
+      transition: transform 0.5s ease;
+    }
+
+    .square2 {
+      background-color: #FE3B70;
+      transition: transform 0.5s ease-in;
+    }
+
+    .square3 {
+      background-color: #50496B;
+      transition: transform 0.5s ease-out;
+    }
+
+    .square4 {
+      background-color: #61708C;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .square5 {
+      background-color: #246E87;
+      transition: transform 0.5s linear;
+    }
+
+    .container:hover .square {
+      transform: translateX(300px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+  <div class="box2"></div>
+  <div class="container">
+    <div class="square square1"></div>
+    <div class="square square2"></div>
+    <div class="square square3"></div>
+    <div class="square square4"></div>
+    <div class="square square5"></div>
+  </div>
+</body>
+
+</html>

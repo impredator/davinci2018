@@ -1,0 +1,93 @@
+<html>
+
+<head>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      display: grid;
+      grid-template: repeat(3, auto) / repeat(3, auto);
+      grid-gap: 1em;
+    }
+
+    .origin {
+      width: 2em;
+      height: 2em;
+      font-size: 11vmin;
+      position: relative;
+      background: #eb4d4b;
+      animation: spin 6s cubic-bezier(.8, 0, .2, 1) infinite;
+    }
+
+    .origin:before,
+    .origin:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: solid 1px #eb4d4b;
+      transform-origin: inherit;
+      /* visibility: hidden; */
+    }
+
+    .origin:before {
+      animation: inherit;
+      /* 动画抵消 */
+      animation-direction: reverse;
+
+      font-size: .12em;
+      content: attr(style);
+      display: flex;
+      text-align: center;
+      word-break: keep-all;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .origin:after {
+      background: #6ab04c;
+      transform: scale(0.1);
+    }
+
+    @keyframes spin {
+      50% {
+        transform: rotate(180deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="origin" style="transform-origin: top left"></div>
+  <div class="origin" style="transform-origin: top center"></div>
+  <div class="origin" style="transform-origin: top right"></div>
+
+  <div class="origin" style="transform-origin: center left"></div>
+  <div class="origin" style="transform-origin: center center"></div>
+  <div class="origin" style="transform-origin: center right"></div>
+
+  <div class="origin" style="transform-origin: bottom left"></div>
+  <div class="origin" style="transform-origin: bottom center"></div>
+  <div class="origin" style="transform-origin: bottom right"></div>
+</body>
+
+</html>

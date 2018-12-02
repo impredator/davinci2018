@@ -1,0 +1,63 @@
+h1 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #CCCCCC;
+  height: 1px;
+  margin-bottom: 25px;
+}
+
+#demo-container {
+  padding: 25px 15px 0 15px;
+  background: #ff7675;
+}
+
+ul#simple-menu {
+  list-style-type: none;
+  width: 100%;
+  position: relative;
+  height: 27px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+  padding: 11px 0 0 0;
+}
+
+ul#simple-menu li {
+  display: block;
+  float: left;
+  margin: 0 0 0 4px;
+  height: 27px;
+}
+
+ul#simple-menu li a {
+  display: block;
+  float: left;
+  color: #fff;
+  background: #eb4d4b;
+  line-height: 27px;
+  text-decoration: none;
+  padding: 0 17px 0 18px;
+  height: 27px;
+}
+
+ul#simple-menu li a:hover {
+  background: #d63031;
+}
+
+ul#simple-menu li a.current {
+  color: #d63031;
+  background: #fff;
+}
+
+ul#simple-menu li a.current:hover {
+  color: #d63031;
+  background: #fff;
+}

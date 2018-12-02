@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <style>
+    body h1 {
+      color: green;
+    }
+
+    html h1 {
+      color: purple;
+    }
+  </style>
+
+</head>
+
+<body>
+  <style>
+    div#test span {
+      color: green;
+    }
+
+    div span {
+      color: blue;
+    }
+
+    span {
+      color: red;
+    }
+  </style>
+  <div id="test">
+    <span>Text</span>
+  </div>
+  <hr>
+  <style>
+    div.outer p {
+      color: orange;
+    }
+
+    div:not(.outer) p {
+      color: blueviolet;
+    }
+  </style>
+  <div class="outer">
+    <p>This is in the outer div.</p>
+    <div class="inner">
+      <p>This text is in the inner div.</p>
+    </div>
+  </div>
+  <hr>
+  <style>
+    *#foo {
+      color: green;
+    }
+
+    *[id="foo"] {
+      color: purple;
+    }
+  </style>
+  <p id="foo">I am a sample text.</p>
+  <hr>
+  <h1>Here is a title!</h1>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <style>
+    .scene {
+      width: 300px;
+      height: 300px;
+      margin: 100px;
+      perspective: 600px;
+    }
+
+    .cube {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transform: translateZ(-100px);
+      animation: moving 6s linear 0s normal infinite;
+    }
+
+    .face {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      font-size: 120px;
+      color: white;
+      line-height: 300px;
+      text-align: center
+    }
+
+    .front {
+      background: #27ae60;
+      opacity: .5;
+      transform: rotateY(0deg) translateZ(150px);
+    }
+    .back {
+      background: #8e44ad;
+      opacity: .5;
+      transform: rotateY(180deg) translateZ(150px);
+    }
+    .left {
+      background: #c0392b;
+      opacity: .5;
+      transform: rotateY(-90deg) translateZ(150px);
+    }
+    .right {
+      background: #f39c12;
+      opacity: .5;
+      transform: rotateY(90deg) translateZ(150px);
+    }
+    .top {
+      background: #2c3e50;
+      opacity: .5;
+      transform: rotateX(90deg) translateZ(150px);
+    }
+    .bottom {
+      background: #2980b9;
+      opacity: .5;
+      transform: rotateX(-90deg) translateZ(150px);
+    }
+
+    @keyframes moving {
+      0% {
+        transform: translateZ(-150px) rotateY(0deg);
+      }
+
+      17% {
+        transform: translateZ(-150px) rotateY(-90deg)
+      }
+
+      34% {
+        transform: translateZ(-150px) rotateY(90deg)
+      }
+
+      51%{
+        transform: translateZ(-150px) rotateX(-90deg)
+      }
+
+      68% {
+        transform: translateZ(-150px) rotateX(90deg)
+      }
+
+      85% {
+        transform: translateZ(-150px) rotateY(-180deg)
+      }
+
+      100% {
+        transform: translateZ(-150px) rotateY(0deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scene">
+    <div class="cube">
+      <div class="face front">1</div>
+      <div class="face back">6</div>
+      <div class="face right">2</div>
+      <div class="face left">3</div>
+      <div class="face top">4</div>
+      <div class="face bottom">5</div>
+    </div>
+  </div>
+</body>
+</html>
