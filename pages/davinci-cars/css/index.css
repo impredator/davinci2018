@@ -1,0 +1,455 @@
+/* Containers */
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.container {
+		width: 1200px;
+	}
+
+	@media screen and (max-width: 1280px) {
+		.container {
+			width: 1000px;
+		}
+
+	}
+
+	@media screen and (max-width: 1080px) {
+		.container {
+			width: 95%;
+		}
+
+	}
+
+	@media screen and (max-width: 820px) {
+		.container {
+			width: 95%;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+		.container {
+			width: 90% !important;
+		}
+
+	}
+
+	.homepage header {
+		letter-spacing: 0.10em;
+		text-align: center;
+	}
+
+	header {
+		margin-bottom: 1em;
+	}
+
+	header h2 {
+		text-transform: uppercase;
+		font-size: 2.2em;
+		font-weight: 700;
+	}
+
+	footer {
+		margin-top: 1em;
+	}
+
+/* Sections/Articles */
+
+	section, article {
+		margin-bottom: 3em;
+	}
+
+	section > :last-child, section:last-child, article > :last-child, article:last-child {
+		margin-bottom: 0;
+	}
+
+	.row > section, .row > article {
+		margin-bottom: 0;
+	}
+
+/* Images */
+
+	.image {
+		display: inline-block;
+	}
+
+	.image img {
+		display: block;
+		width: 100%;
+	}
+
+	.image.full {
+		display: block;
+		width: 100%;
+	}
+
+/* Lists */
+
+	ul.default {
+		list-style: disc;
+		padding-left: 1em;
+	}
+
+	ul.default li {
+		padding-left: 0.5em;
+	}
+
+	ul.style1 {
+		overflow: hidden;
+		background: #FFF;
+		border-radius: 5px;
+	}
+
+	ul.style1 li {
+		overflow: hidden;
+	}
+
+	ul.style1 a {
+		display: block;
+		text-decoration: none;
+		color: #514439;
+	}
+
+	ul.style1 a:hover {
+		text-decoration: underline;
+	}
+
+/* Buttons */
+
+	.button {
+		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+		display: inline-block;
+		background: none;
+		border: 2px solid #FFF;
+		border-radius: 8px;
+		font-size: 0.85em;
+		letter-spacing: 2px;
+		padding: 0.85em 2.75em 0.85em 2.75em;
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 1em;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	.button:hover {
+		background: #575fcf;
+		border-color: #fff;
+		border-color: rgba(255, 255, 255, 0.4);
+		color: #FFF !important;
+	}
+
+/* Header */
+
+	#header {
+		padding: 1.5em 0em 1em 0em;
+	}
+
+	#header .container {
+		position: relative;
+	}
+
+/* Logo */
+
+	#logo h1 a {
+		position: absolute;
+		margin: 0;
+		top: 0.75em;
+		padding-left: 1.75em;
+		letter-spacing: 0.10em;
+		text-decoration: none;
+		text-transform: uppercase;
+		display: block;
+		font-size: 2em;
+		font-weight: 700;
+		color: #FFF;
+	}
+
+	#logo h1 span {
+		font-weight: 300;
+	}
+
+	#logo .davinci-logo {
+		position: relative;
+		display: inline-block;
+		width: 35px;
+		height: 35px;
+		top: 1.2em;
+		margin: 0em 0em 3em 0em;
+		padding-top: 0.39em;
+		background: #FFF;
+		border-radius: 50%;
+		font-size: 1em;
+		color: rgba(0, 0, 0, 0.8);
+	}
+
+/* Nav */
+
+	#nav {
+		position: absolute;
+		right: 0;
+		top: 1.5em;
+	}
+
+		#nav > ul > li {
+			float: left;
+		}
+
+		#nav > ul > li:last-child {
+			padding-right: 0;
+		}
+
+		#nav > ul > li > a {
+			display: block;
+			margin-left: 0.7em;
+			padding: 0.30em 1em;
+			letter-spacing: 0.06em;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: 700;
+			font-size: 0.9em;
+			outline: 0;
+			color: #aaa;
+			color: rgba(255, 255, 255, 0.6);
+		}
+
+		#nav > ul > li.active > a {
+			color: #fff;
+			color: white;
+		}
+
+/* Banner */
+
+	#banner {
+		position: relative;
+		padding: 2em 0em 2em 0em;
+		background: #FFF;
+		text-align: center;
+		color: #fff;
+	}
+
+	.bannerbox {
+		background: #3c40c6;
+		padding: 1.5em;
+	}
+
+	.bannerbox h2{
+		font-size: 1.5em;
+	}
+
+/* Featured */
+
+	#featured {
+		position: relative;
+		padding: 2em 0em 1.5em 0em;
+		background: #3c40c6;
+	}
+
+	#featured header {
+		color: #FFF;
+	}
+
+
+/* Main */
+
+	#main {
+		position: relative;
+		padding: 2em 0em;
+		background: #fff;
+	}
+
+	#main .box {
+		margin-top: -2px;
+		padding: 2em;
+		border-radius: 0px 0px 8px 8px;
+		border: 2px solid;
+		border-color: #3c40c6;
+		background: #3c40c6;
+		text-align: center!important;
+	}
+
+	#main .box h3 a{
+		color: #fff;
+		font-size: 2.5em;
+	}
+
+	#main p {
+		color: #555;
+	}
+
+	#main h2 {
+		font-size: 2.5em;
+		padding: 1em 0em;
+	}
+
+	.homepage #main .image img {
+		margin-bottom: 0;
+		border-radius: 8px 8px 0px 0px;
+	}
+
+/* Sidebar */
+
+	#sidebar section{
+		padding-top: 0;
+	}
+
+	#sidebar {
+		margin-top: 0em;
+	}
+
+	#sidebar h3, #main #sidebar h4, #main #sidebar h5, #main #sidebar a , #main #sidebar p{
+		color: #555;
+	}
+
+/* Footer */
+
+	#footer {
+		position: relative;
+		padding: 2em 0em;
+		text-align: center;
+	}
+
+	#footer header {
+		margin-bottom: 1em;
+	}
+
+	#footer header h2, #footer p {
+		color: #FFF;
+	}
+
+/* Copyright */
+
+	.copyright {
+		position: relative;
+		padding: 0em 0em 0em 0em;
+		text-align: center;
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	.copyright a{
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+/* Normal */
+
+	@media screen and (max-width: 1280px) {
+
+			body, input, textarea, select {
+				font-size: 11pt;
+			}
+
+	}
+
+/* Narrow */
+
+	@media screen and (max-width: 1080px) {
+
+		/* Header */
+
+			#header {
+				padding: 0em 0em;
+			}
+
+		/* Logo */
+
+			#logo h1 a {
+				top: 0.95em;
+			}
+
+			#logo .davinci-logo {
+				top: 1.5em;
+			}
+
+				#logo .davinci-logo span {
+					padding-top: 0.39em;
+				}
+
+		/* Banner */
+
+			#banner {
+				padding: 2em 0em 2em 0em;
+			}
+
+		/* Main */
+
+			#main {
+				padding: 2em 0em;
+			}
+
+			.homepage #main header p {
+				padding: 0em 2em;
+			}
+
+		/* Footer */
+
+			#footer {
+				padding: 2em 0em;
+			}
+
+	}
+
+/* Mobile */
+
+	@media screen and (max-width: 736px) {
+
+		/* Basic */
+
+			html, body {
+				overflow-x: hidden;
+			}
+
+			p {
+				text-align: justify;
+			}
+
+		/* Header */
+
+			#header {
+				position: relative;
+				text-align: center;
+				padding: 1.5em 0 3em 0;
+			}
+
+		/* Logo */
+
+			#logo h1 {
+				display: block;
+				text-align: center;
+			}
+
+			#logo h1 a {
+				position: inherit;
+				padding: 0;
+			}
+
+		/* Nav */
+
+			#nav {
+				display: none;
+			}
+
+		/* Main */
+
+			#main {
+				padding: 1em 0em 1em 0em;
+			}
+
+		/* Sidebar */
+
+			#sidebar section {
+				margin-bottom: 2em;
+			}
+
+		/* Featured */
+
+			#featured {
+				padding: 2em 0em 2em 0em;
+			}
+
+	}

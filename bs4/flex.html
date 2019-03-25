@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <style>
+    .container {
+      padding: 2rem 0rem;
+    }
+
+    h4 {
+      margin: 2rem 0rem;
+    }
+
+    .panel {
+      border-radius: 4px;
+      padding: 1rem;
+      margin-top: 2rem;
+      background-color: #F5F5F5;
+      color: #323B40;
+    }
+
+    .panel.panel-blue {
+      background-color: #E0F5FF;
+      color: #00A5FA;
+    }
+
+    .panel.panel-big-height {
+      min-height: 150px;
+    }
+
+    .item {
+      border-radius: 4px;
+      padding: 0.5rem;
+      margin: 0.2rem;
+    }
+
+    .item.item-blue {
+      background-color: #B9E5FE;
+      color: #00A5FA;
+    }
+
+    .item.item-green {
+      background-color: #B7E0DC;
+      color: #019888;
+    }
+
+    .item.item-lime {
+      background-color: #C7E8C8;
+      color: #42B045;
+    }
+
+    .item.item-yellow {
+      background-color: #FFEEBA;
+      color: #FF9901;
+    }
+
+    .item.item-pink {
+      background-color: #FABAD0;
+      color: #EF075F;
+    }
+
+    .item.item-red {
+      background-color: #FEC9C6;
+      color: #FD3D08;
+    }
+
+    .item.item-big-width {
+      min-width: 380px;
+    }
+  </style>
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="d-flex panel">
+      I'm a flexbox container.
+    </div>
+
+    <div class="d-inline-flex panel">
+      I'm an inline flexbox container.
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="d-flex panel">
+      <div class="item item-blue">Flex item 1</div>
+      <div class="item item-green">Flex item 2</div>
+      <div class="item item-lime">Flex item 3</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="d-flex flex-row-reverse panel">
+      <div class="item item-blue">Flex item 1</div>
+      <div class="item item-green">Flex item 2</div>
+      <div class="item item-lime">Flex item 3</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="d-flex justify-content-start panel">
+          <div class="item item-yellow">Flex item 1</div>
+          <div class="item item-pink">Flex item 2</div>
+          <div class="item item-red">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-end panel">
+          <div class="item item-yellow">Flex item 1</div>
+          <div class="item item-pink">Flex item 2</div>
+          <div class="item item-red">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-center panel">
+          <div class="item item-yellow">Flex item 1</div>
+          <div class="item item-pink">Flex item 2</div>
+          <div class="item item-red">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-between panel">
+          <div class="item item-yellow">Flex item 1</div>
+          <div class="item item-pink">Flex item 2</div>
+          <div class="item item-red">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-around panel">
+          <div class="item item-yellow">Flex item 1</div>
+          <div class="item item-pink">Flex item 2</div>
+          <div class="item item-red">Flex item 3</div>
+        </div>
+
+      </div>
+    </div>
+    <div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="d-flex align-items-start panel panel-big-height">
+              <div class="item item-blue">Flex item 1</div>
+              <div class="item item-green">Flex item 2</div>
+              <div class="item item-lime">Flex item 3</div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="d-flex align-items-center panel panel-big-height">
+              <div class="item item-blue">Flex item 1</div>
+              <div class="item item-green">Flex item 2</div>
+              <div class="item item-lime">Flex item 3</div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="d-flex align-items-end panel panel-big-height">
+              <div class="item item-blue">Flex item 1</div>
+              <div class="item item-green">Flex item 2</div>
+              <div class="item item-lime">Flex item 3</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-10">
+            <div class="d-flex align-items-baseline panel panel-big-height">
+              <div class="item item-blue">
+                <h1>Flex item 1</h1>
+              </div>
+              <div class="item item-green">Flex item 2</div>
+              <div class="item item-lime">
+                <h4>Flex item 3</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="d-flex panel">
+              <div class="item item-yellow">Flex item</div>
+              <div class="item item-pink">Flex item</div>
+              <div class="item item-red ml-auto">Flex item</div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="d-flex panel">
+              <div class="item item-yellow mr-auto">Flex item</div>
+              <div class="item item-pink">Flex item</div>
+              <div class="item item-red ">Flex item</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="d-flex panel panel-big-height">
+              <div class="item item-yellow">Flex item 1</div>
+              <div class="item item-pink align-self-center">Flex item 2</div>
+              <div class="item item-red">Flex item 3</div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="d-flex align-items-start panel panel-big-height">
+              <div class="item item-yellow">Flex item 1</div>
+              <div class="item item-pink align-self-stretch">Flex item 2</div>
+              <div class="item item-red">Flex item 3</div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="d-flex panel panel-big-height">
+              <div class="item item-yellow">Flex item</div>
+              <div class="item item-pink align-self-end">Flex item 2</div>
+              <div class="item item-red">Flex item 3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="d-flex panel">
+          <div class="item item-pink flex-grow-1">Flex item 1</div>
+          <div class="item item-pink flex-grow-1">Flex item 2</div>
+          <div class="item item-pink">Flex item 3</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="d-flex panel">
+          <div class="item item-pink flex-shrink-1">Flex item 1</div>
+          <div class="item item-pink w-100">Flex item 2</div>
+          <div class="item item-pink w-100">Flex item 3</div>
+        </div>
+
+        <div class="d-flex panel">
+          <div class="item item-pink flex-shrink-1">Flex item 1</div>
+          <div class="item item-pink flex-shrink-1">Flex item 2</div>
+          <div class="item item-pink w-100">Flex item 3</div>
+        </div>
+      </div>
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+/* Grid */
+/* https://doremifaso.ca/archives/unicode/latin1.html */
+
+.row {
+	border-bottom: solid 1px transparent;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.row > * {
+	float: left;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.row:after, .row:before {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+/* .12u .12u$ */
+.\0000312u, .\31 2u\24 {
+	width: 100%;
+	clear: none;
+	margin-left: 0;
+}
+
+/* .11u .11u$ */
+.\31 1u, .\31 1u\24 {
+	width: 91.6666666667%;
+	clear: none;
+	margin-left: 0;
+}
+
+/* .10u .10u$ */
+.\31 0u, .\31 0u\24 {
+	width: 83.3333333333%;
+	clear: none;
+	margin-left: 0;
+}
+
+/* .9u .9u$ */
+.\39 u, .\39 u\24 {
+	width: 75%;
+	clear: none;
+	margin-left: 0;
+}
+
+/* .8u .8u$ */
+.\38 u, .\38 u\24 {
+	width: 66.6666666667%;
+	clear: none;
+	margin-left: 0;
+}
+
+/* .7u .7u$ */
+.\37 u, .\37 u\24 {
+	width: 58.3333333333%;
+	clear: none;
+	margin-left: 0;
+}
+
+/* .6u .6u$ */
+.\36 u, .\36 u\24 {
+	width: 50%;
+	clear: none;
+	margin-left: 0;
+}
+
+/* .5u .5u$ */
+.\35 u, .\35 u\24 {
+	width: 41.6666666667%;
+	clear: none;
+	margin-left: 0;
+}
+
+/* .4u .4u$ */
+.\34 u, .\34 u\24 {
+	width: 33.3333333333%;
+	clear: none;
+	margin-left: 0;
+}
+
+/* .3u .3u$ */
+.\33 u, .\33 u\24 {
+	width: 25%;
+	clear: none;
+	margin-left: 0;
+}
+
+/* .2u .2u$ */
+.\32 u, .\32 u\24 {
+	width: 16.6666666667%;
+	clear: none;
+	margin-left: 0;
+}
+
+/* .1u .1u$ */
+.\31 u, .\31 u\24 {
+	width: 8.3333333333%;
+	clear: none;
+	margin-left: 0;
+}
+
+@media screen and (max-width: 1280px) {
+
+	.row > * {
+		padding: 40px 0 0 40px;
+	}
+
+	.row {
+		margin: -40px 0 -1px -40px;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+
+	.row > * {
+		padding: 30px 0 0 30px;
+	}
+
+	.row {
+		margin: -30px 0 -1px -30px;
+	}
+
+}
+
+@media screen and (max-width: 820px) {
+
+	.row > * {
+		padding: 25px 0 0 25px;
+	}
+
+	.row {
+		margin: -25px 0 -1px -25px;
+	}
+}
+
+@media screen and (max-width: 736px) {
+
+	.row > * {
+		padding: 25px 0 0 25px;
+	}
+
+	.row {
+		margin: -25px 0 -1px -25px;
+	}
+
+	.\31 2u\28mobile\29 {
+		width: 100%;
+		clear: none;
+		margin-left: 0;
+	}
+
+	.\31 1u\28mobile\29 {
+		width: 91.6666666667%;
+		clear: none;
+		margin-left: 0;
+	}
+
+	.\31 0u\28mobile\29 {
+		width: 83.3333333333%;
+		clear: none;
+		margin-left: 0;
+	}
+
+	.\39 u\28mobile\29 {
+		width: 75%;
+		clear: none;
+		margin-left: 0;
+	}
+
+	.\38 u\28mobile\29 {
+		width: 66.6666666667%;
+		clear: none;
+		margin-left: 0;
+	}
+
+	.\37 u\28mobile\29 {
+		width: 58.3333333333%;
+		clear: none;
+		margin-left: 0;
+	}
+
+	.\36 u\28mobile\29 {
+		width: 50%;
+		clear: none;
+		margin-left: 0;
+	}
+
+	.\35 u\28mobile\29 {
+		width: 41.6666666667%;
+		clear: none;
+		margin-left: 0;
+	}
+
+	.\34 u\28mobile\29 {
+		width: 33.3333333333%;
+		clear: none;
+		margin-left: 0;
+	}
+
+	.\33 u\28mobile\29 {
+		width: 25%;
+		clear: none;
+		margin-left: 0;
+	}
+
+	.\32 u\28mobile\29 {
+		width: 16.6666666667%;
+		clear: none;
+		margin-left: 0;
+	}
+
+	.\31 u\28mobile\29 {
+		width: 8.3333333333%;
+		clear: none;
+		margin-left: 0;
+	}
+}

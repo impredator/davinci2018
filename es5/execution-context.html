@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+var n = 'window';
+var object = {
+  n: 'object',
+  getN: function() {
+    return function() {
+      return this.n;
+    }
+  }
+}
+console.log(object.getN()())
+  </script>
+</head>
+<body>
+</body>
+</html>
