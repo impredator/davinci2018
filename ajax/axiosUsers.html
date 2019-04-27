@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="/axios.min.js"></script>
+  <style>
+    li {
+      float: left;
+      list-style: none;
+      text-align: center;
+      width: 150px;
+    }
+    li span {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Authors</h1>
+  <ul id="authors"></ul>
+  <script type="text/javascript">
+    function createNode(element) {
+      return document.createElement(element);
+    }
+
+    function append(parent, el) {
+      return parent.appendChild(el);
+    }
+
+    const ul = document.getElementById('authors');
+    const url = 'https://randomuser.me/api/?results=10';
+
+    axios.get(url)
+      .then(function(response) {
+        let authors = response.data.results;
+        return authors.map(function(author) {
+          let li = createNode('li'),
+            img = createNode('img'),
+            span = createNode('span');
+          img.src = author.picture.medium;
+          span.innerHTML = `${author.name.first} ${author.name.last}`;
+          append(li, img);
+          append(li, span);
+          append(ul, li);
+        })
+      })
+      .catch(function(error) {
+        // handle error
+        console.log(error);
+      })
+      .then(function() {
+        alert('load complete')
+        console.log('finally play even failed');
+      });
+  </script>
+</body>
+
+</html>

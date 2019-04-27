@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <button type="button" id="fileBtn">Get Products</button>
+
+  <div id="space"></div>
+
+
+  <script type="text/javascript">
+    var space = document.getElementById('space');
+    document.getElementById('fileBtn').onclick = ajaxFile;
+
+    function ajaxFile() {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+          if (xhr.status == 200) {
+            space.innerHTML = readProducts(xhr.responseText);
+          } else {
+            alert('Error ' + xhr.status);
+          }
+        }
+      }
+      xhr.open('get', 'http://localhost:3000/product', true);
+      xhr.send(null);
+    }
+
+    function readProducts(productListString) {
+      var productJson = JSON.parse(productListString);
+      var products = productJson.body;
+      var productNames = "Product Name: ";
+      for(var i = 0; i < products.length; i++) {
+        productNames += products[i].name + "; "
+      }
+      return productNames;
+    }
+  </script>
+</body>
+
+</html>

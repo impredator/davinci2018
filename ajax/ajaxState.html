@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+  <form name="ajax" method="POST" action="">
+    <input type="button" value="我们是" onClick="ajaxFile()">
+    <input type="button" value="加载状态" onClick="ajaxStates()">
+  </form>
+
+  <div id="zone"></div>
+
+  <script type="text/javascript">
+    var zone = document.getElementById("zone");
+
+    function ajaxFile() {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "result.txt", true);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4) {
+          zone.innerHTML = xhr.responseText;
+        }
+      };
+      xhr.send(null);
+    }
+
+    function ajaxStates() {
+      xhr = new XMLHttpRequest();
+      zone.innerHTML = "Started...";
+      xhr.open("GET", 'result.txt', true);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4) {
+          zone.innerHTML += xhr.readyState;
+          if (xhr.status == 200) {
+            zone.innerHTML += "Completed...";
+            zone.innerHTML += xhr.responseText;
+          } else {
+            alert("Error " + xhr.status);
+          }
+        } else {
+          zone.innerHTML += xhr.readyState;
+        }
+      }
+      xhr.send(null);
+    }
+  </script>
+
+</body>
+
+</html>

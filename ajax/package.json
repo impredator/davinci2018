@@ -1,0 +1,15 @@
+{
+  "name": "ajax",
+  "version": "1.0.0",
+  "description": "1. npm install -g http-server 2. http-server 3. http://127.0.0.1:8080/firstAjax.html 4. http://127.0.0.1:8080/ajaxState.html 5.",
+  "main": "bestFetch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
