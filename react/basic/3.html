@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>React! React! React!</title>
+
+  <style>
+    #container {
+      padding: 50px;
+      background-color: #FFF;
+    }
+    .letter {
+      padding: 10px;
+      margin: 10px;
+      background-color: #ffde00;
+      color: #333;
+      display: inline-block;
+      font-family: monospace;
+      font-size: 32px;
+      text-align: center;
+    }
+  </style>
+
+  <!-- react core -->
+  <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> -->
+  <script src="./react.development.js"></script>
+  <script src="./react-dom.development.js"></script>
+
+  <!-- babel:jsx to js -->
+  <script src="./babel.min.js"></script>
+
+</head>
+
+<body>
+  <div id="container"></div>
+  <script type="text/babel">
+    var destination = document.querySelector("#container");
+
+    // first step
+    class Letter extends React.Component {
+      render() {
+        return(
+          <div className="letter">
+            {this.props.children}
+          </div>
+        );
+      }
+    }
+
+    // second step
+    class Letter2 extends React.Component {
+      render() {
+        var letterStyle = {
+          padding: 10,
+          margin: 10,
+          backgroundColor: this.props.bgcolor,
+          color: "#333",
+          display: "inline-block",
+          fontFamily: "monospace",
+          fontSize: 32,
+          textAlign: "center"
+        };
+        return(
+          <div style={letterStyle}>
+            {this.props.children}
+          </div>
+        );
+      }
+    }
+
+    ReactDOM.render(
+      <div>
+        <Letter2 bgcolor="#58B3FF">A</Letter2>
+        <Letter2 bgcolor="#FF605F">E</Letter2>
+        <Letter>I</Letter>
+        <Letter2 bgcolor="#49DD8E">O</Letter2>
+        <Letter2 bgcolor="#AE99FF">U</Letter2>
+      </div>,
+      destination
+    );
+  </script>
+</body>
+
+</html>

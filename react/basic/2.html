@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>React! React! React!</title>
+
+  <style>
+    #container {
+    	padding: 50px;
+    	background-color: #EEE;
+    }
+    #container h1 {
+    	font-size: 144px;
+		font-family: sans-serif;
+   	 color: #0080a8;
+    }
+</style>
+
+  <!-- react core -->
+  <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> -->
+  <script src="./react.development.js"></script>
+  <script src="./react-dom.development.js"></script>
+
+  <!-- babel:jsx to js -->
+  <script src="./babel.min.js"></script>
+
+</head>
+
+<body>
+  <div id="container"></div>
+  <script type="text/babel">
+    // first step
+    // class HelloWorld extends React.Component {
+    //     render() {
+    //        return <h1>Hello, componentized world!</h1>;
+    //     }
+    // }
+    //
+    // ReactDOM.render(
+    //   <div>
+    //     <HelloWorld/>
+    //   </div>,
+    //   document.querySelector("#container")
+    // );
+
+    // second step
+    // class HelloWorld extends React.Component {
+    //   render() {
+    //    return <h1>Hello, {this.props.greetTarget}!</h1>;
+    //   }
+    // }
+    // ReactDOM.render(
+    //   <div>
+    //     <HelloWorld greetTarget="Batman"/>
+    //     <HelloWorld greetTarget="Iron Man"/>
+    //     <HelloWorld greetTarget="Nicolas Cage"/>
+    //     <HelloWorld greetTarget="Mega Man"/>
+    //     <HelloWorld greetTarget="Bono"/>
+    //     <HelloWorld greetTarget="Catwoman"/>
+    //   </div>,
+    //   document.querySelector("#container")
+    // );
+
+    // third step
+    class Buttonify extends React.Component {
+      render() {
+        return(
+          <div>
+            <button type={this.props.behavior}>{this.props.children}</button>
+          </div>
+        );
+      }
+    }
+    ReactDOM.render(
+      <div>
+        <Buttonify behavior="submit">SEND DATA</Buttonify>
+      </div>,
+      document.querySelector("#container")
+    );
+  </script>
+</body>
+
+</html>
