@@ -1,0 +1,38 @@
+.user {
+  background-color: #fff; }
+  .user__top {
+    background-color: #16a085;
+    color: #fff;
+    padding: 10px 20px 30px; }
+  .user__info {
+    display: flex; }
+  .user__avatar {
+    width: 70px;
+    height: 70px;
+    background-color: #ccc;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-size: cover; }
+  .user__detail {
+    flex: 1;
+    overflow: hidden; }
+  .user__name {
+    font-size: 20px;
+    line-height: 28px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; }
+  .user__fellow, .user__fans {
+    margin-top: 10px;
+    font-size: 12px; }
+  .user__level {
+    padding: 0 8px;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    background-color: #5A5E78;
+    border-radius: 8px;
+    width: 50px;
+    text-align: center; }
+  .user__content {
+    padding: 0 20px; }

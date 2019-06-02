@@ -1,0 +1,32 @@
+//  variable
+
+$black: #000;
+$gray: #777;
+$light-grey: #ccc;
+$border: #E4E2E2;
+$primary: #27ae60;
+$active: #2ecc71;
+$tag: #ffa54b;
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-v-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin line-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

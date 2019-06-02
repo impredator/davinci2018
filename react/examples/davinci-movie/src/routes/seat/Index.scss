@@ -1,0 +1,33 @@
+@import "../../util";
+
+.seat {
+  .operator {
+    padding: 0 20px;
+  }
+
+  &__tip {
+    height: 24px;
+    padding: 10px 0;
+    background: #fff url("../../static/icons/seats.svg") 50% 50% / auto 24px no-repeat;
+  }
+
+  &__graph {
+    background-color: #F7F7F7;
+    width: 100%;
+    height: 500px;
+  }
+
+  &__screen {
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    color: $black;
+    text-align: center;
+    background: transparent url("../../static/icons/screen.svg") 50% 0 / auto 28px no-repeat;
+  }
+
+  &__map {
+    width: 100%;
+    overflow-x: scroll;
+  }
+}

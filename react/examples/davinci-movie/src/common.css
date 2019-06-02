@@ -1,0 +1,46 @@
+.tag {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 12px;
+  line-height: 14px;
+  border-radius: 4px; }
+  .tag:nth-child(n + 2) {
+    margin-left: 6px; }
+  .tag--red {
+    color: #EF6A79;
+    border: 1px solid #EF6A79; }
+  .tag--blue {
+    color: #5BA4E8;
+    border: 1px solid #5BA4E8; }
+
+.btn {
+  border: none;
+  width: 50px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 14px;
+  text-align: center;
+  background-color: #27ae60;
+  color: #fff;
+  font-size: 12px; }
+
+.operator {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  line-height: 40px; }
+  .operator__icon {
+    width: 40px;
+    height: 40px; }
+  .operator__icon--setting {
+    background: transparent url("./static/icons/setting.svg") 0 50%/20px 20px no-repeat; }
+  .operator__icon--message {
+    background: transparent url("./static/icons/message.svg") 100% 50%/20px 20px no-repeat; }
+  .operator__icon--back {
+    background: transparent url("./static/icons/back.svg") 0 50%/20px 20px no-repeat; }
+  .operator__icon--blackBack {
+    background: transparent url("./static/icons/back-black.svg") 0 50%/20px 20px no-repeat; }
+  .operator__icon--share {
+    background: transparent url("./static/icons/share.svg") 100% 50%/20px 20px no-repeat; }
+  .operator__icon--blackShare {
+    background: transparent url("./static/icons/share-black.svg") 100% 50%/20px 20px no-repeat; }

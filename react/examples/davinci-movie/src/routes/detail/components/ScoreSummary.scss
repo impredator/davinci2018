@@ -1,0 +1,66 @@
+@import "../../../util";
+
+.score-summary {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .summary-item {
+    &__value {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+    }
+
+    &__title {
+      font-size: 12px;
+      color: $gray;
+    }
+  }
+
+  .summary-btn {
+    display: flex;
+
+    &__item {
+      flex: 1;
+      //display: block;
+      height: 46px;
+      line-height: 46px;
+      background-color: #F5F5F5;
+      text-align: center;
+      -webkit-appearance: none;
+      outline: none;
+      border: none;
+      border-radius: 4px;
+      color: $gray;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        display: inline-block;
+        margin-right: 10px;
+        width: 16px;
+        height: 16px;
+      }
+
+      &--want {
+        i {
+          background: url("../../../static/icons/heart.svg") 50% / contain no-repeat;
+        }
+      }
+
+      &--seen {
+        margin-left: 20px;
+
+        i {
+          background: url("../../../static/icons/star.svg") 50% / contain no-repeat;
+        }
+      }
+    }
+
+  }
+}

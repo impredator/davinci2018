@@ -1,0 +1,13 @@
+.tag-list__item {
+  display: inline-block;
+  border: 1px solid #E4E2E2;
+  color: #000;
+  font-size: 14px;
+  line-height: 28px;
+  height: 28px;
+  padding: 0 14px;
+  border-radius: 14px;
+  margin: 6px 6px 0 0;
+  cursor: pointer; }
+  .tag-list__item--active {
+    border: 1px solid #2ecc71; }

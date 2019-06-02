@@ -1,0 +1,22 @@
+.base-info {
+  display: flex;
+  margin-top: 10px; }
+  .base-info__detail {
+    flex: 1; }
+  .base-info__poster {
+    width: 100px;
+    height: 150px;
+    background-size: cover; }
+  .base-info__name {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    margin: 0  0 8px; }
+  .base-info__subTitle, .base-info__other {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px; }
+  .base-info__subTitle {
+    margin-bottom: 14px; }
+  .base-info__other {
+    margin-top: 8px; }

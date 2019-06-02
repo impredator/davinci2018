@@ -1,0 +1,16 @@
+.home::-webkit-scrollbar {
+  display: none; }
+
+.home__slide {
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.home__content {
+  padding: 0 20px 49px;
+  list-style: none;
+  margin: 0; }
+  .home__content li {
+    list-style: none; }
+    .home__content li:nth-child(n + 2) {
+      border-top: 1px solid #E4E2E2; }

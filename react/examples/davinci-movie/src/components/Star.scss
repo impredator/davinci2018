@@ -1,0 +1,9 @@
+.star {
+  display: inline-block;
+  background: #fff url("../static/icons/star-o.svg") 0 50% / contain repeat-x;
+
+  &__top {
+    height: 100%;
+    background: #fff url("../static/icons/star.svg") 0 50% / contain repeat-x;
+  }
+}

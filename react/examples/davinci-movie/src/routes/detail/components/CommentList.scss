@@ -1,0 +1,71 @@
+@import "../../../util";
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+
+  li:nth-child(n + 2) {
+    margin-top: 24px;
+  }
+
+  .comment-user {
+    display: flex;
+
+    &__avatar {
+      width: 50px;
+      height: 50px;
+      background-color: $light-grey;
+      border-radius: 50%;
+      background-size: cover;
+    }
+
+    &__detail {
+      margin-left: 10px;
+
+      @include flex-v-center;
+    }
+    &__name {
+      font-size: 16px;
+      font-weight: bold;
+      color: $black;
+      margin-bottom: 6px;
+    }
+
+    &__value {
+      color: $tag;
+      font-weight: bold;
+    }
+  }
+
+  .comment-item {
+    &__detail {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      font-size: 12px;
+      color: $gray;
+      margin-top: 6px;
+    }
+
+    &__time {
+      flex: 1;
+    }
+
+    &__zan {
+      width: 120px;
+      text-align: right;
+    }
+
+    &__zan i {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background: #fff url("../../../static/icons/zan-o.svg") 50% / cover no-repeat;
+    }
+
+    &__zan--active i {
+      background: #fff url("../../../static/icons/zan-solid.svg") 50% / cover no-repeat;
+    }
+  }
+}

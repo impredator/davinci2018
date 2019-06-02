@@ -1,0 +1,88 @@
+.city-layer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: #fff; }
+  .city-layer__title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #E2E2E2; }
+  .city-layer__close {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    font-weight: normal; }
+  .city-layer__content {
+    position: absolute;
+    width: 100%;
+    top: 44px;
+    bottom: 0;
+    background-color: #F5F5F5;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; }
+  .city-layer .city-block {
+    padding: 10px 15px; }
+    .city-layer .city-block__label {
+      font-size: 12px;
+      color: #9f9fa0;
+      margin-bottom: 14px; }
+    .city-layer .city-block__wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    .city-layer .city-block__item {
+      width: 116px;
+      height: 32px;
+      line-height: 32px;
+      background-color: #fff;
+      border: 1px solid #E4E2E2;
+      color: #999;
+      margin-bottom: 10px;
+      text-align: center; }
+  .city-layer .city-list__label, .city-layer .city-list__item {
+    color: #333;
+    font-size: 12px; }
+  .city-layer .city-list__label {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 15px;
+    border-top: 1px solid #E4E2E2;
+    border-bottom: 1px solid #E4E2E2; }
+  .city-layer .city-list__wrap {
+    margin: 0;
+    padding: 0 15px;
+    background-color: #fff; }
+  .city-layer .city-list__item {
+    list-style: none;
+    height: 48px;
+    line-height: 48px; }
+    .city-layer .city-list__item:nth-child(n + 2) {
+      border-top: 1px solid #E4E2E2; }
+  .city-layer__index {
+    position: absolute;
+    padding: 0 6px;
+    top: 80px;
+    right: 0; }
+  .city-layer .city-index__list {
+    width: 40px;
+    padding: 0;
+    list-style: none; }
+  .city-layer .city-index__item {
+    list-style: none;
+    margin-bottom: 4px;
+    text-align: center; }
+    .city-layer .city-index__item a {
+      text-decoration: none;
+      font-size: 12px;
+      color: #5fb5f9; }

@@ -1,0 +1,43 @@
+.movie-item {
+  display: flex;
+  padding: 16px 0; }
+  .movie-item__poster {
+    width: 66px;
+    height: 96px; }
+    .movie-item__poster img {
+      width: 100%;
+      height: 100%; }
+  .movie-item__detail {
+    flex: 1;
+    margin: 0 14px; }
+  .movie-item__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .movie-item__price {
+    color: #777;
+    font-size: 12px;
+    margin-top: 4px; }
+  .movie-item__name {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px; }
+  .movie-item__score {
+    color: #333;
+    font-size: 12px;
+    margin-top: 4px; }
+    .movie-item__score span {
+      font-weight: bold;
+      color: #ffa54b;
+      margin-left: 4px; }
+  .movie-item__director, .movie-item__actor {
+    color: #777;
+    font-size: 10px; }
+  .movie-item__director {
+    margin-top: #ffa54b; }
+  .movie-item__actor {
+    margin-top: 6px; }
+  .movie-item__tag {
+    margin-top: 8px; }

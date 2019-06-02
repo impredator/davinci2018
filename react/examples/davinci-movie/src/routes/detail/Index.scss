@@ -1,0 +1,44 @@
+@import "../../util";
+
+.detail {
+  &__top {
+    background-color: #1abc9c;
+    padding: 0 20px;
+  }
+
+  &__content {
+    padding: 0 20px 55px;
+  }
+
+  &__module {
+    padding: 20px 0;
+
+    &:nth-child(n + 2) {
+      border-top: 1px solid $border;
+    }
+  }
+
+  &__moduleTitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 16px;
+  }
+
+  &__overview {
+    color: #333;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  &__buyBtn {
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    line-height: 55px;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    background-color: $active;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../../util";
+
+.artist {
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-right: -20px;
+    -webkit-overflow-scrolling: touch;//ios设备滚动的更加圆滑/回弹效果
+
+    li {
+      padding-right: 6px;
+    }
+
+    li:last-child {
+      padding-right: 20px;
+    }
+    // 滚动条消失
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .artist-info {
+    display: block;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+
+    &__image {
+      width: 80px;
+      height: 110px;
+      background-color: $light-grey;
+      background-size: cover;
+      background-position: 50% 0;
+    }
+
+    &__name {
+      font-size: 14px;
+      color: $black;
+      margin: 10px 0;
+    }
+
+    &__job {
+      font-size: 12px;
+      color: $gray;
+      margin: 0;
+    }
+
+  }
+}

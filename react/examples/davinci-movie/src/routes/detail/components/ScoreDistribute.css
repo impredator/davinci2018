@@ -1,0 +1,29 @@
+.score-distribute {
+  display: flex; }
+  .score-distribute .score {
+    width: 100px;
+    text-align: center; }
+    .score-distribute .score__value {
+      font-size: 34px;
+      color: #000;
+      font-weight: 500; }
+    .score-distribute .score__desc {
+      color: #777;
+      font-size: 12px; }
+  .score-distribute .distribute {
+    flex: 1; }
+    .score-distribute .distribute__item {
+      height: 8px;
+      display: flex;
+      align-items: center; }
+      .score-distribute .distribute__item:nth-child(n + 2) {
+        margin-top: 2px; }
+    .score-distribute .distribute__btm {
+      flex: 1;
+      margin-left: 10px;
+      width: 100%;
+      height: 4px;
+      background-color: #ccc; }
+    .score-distribute .distribute__top {
+      height: 100%;
+      background-color: #000; }

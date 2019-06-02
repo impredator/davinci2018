@@ -1,0 +1,34 @@
+.artist__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  margin-right: -20px;
+  -webkit-overflow-scrolling: touch; }
+  .artist__list li {
+    padding-right: 6px; }
+  .artist__list li:last-child {
+    padding-right: 20px; }
+  .artist__list::-webkit-scrollbar {
+    display: none; }
+
+.artist .artist-info {
+  display: block;
+  width: 80px;
+  text-align: center;
+  text-decoration: none; }
+  .artist .artist-info__image {
+    width: 80px;
+    height: 110px;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: 50% 0; }
+  .artist .artist-info__name {
+    font-size: 14px;
+    color: #000;
+    margin: 10px 0; }
+  .artist .artist-info__job {
+    font-size: 12px;
+    color: #777;
+    margin: 0; }
